@@ -1,0 +1,1 @@
+PNID_PROMPT = 'Make sure you specify the order of operations. Limit the number of elements to 5. Only Order of operations should be passed and not any heading. Make sure to use ** to represent the name of the operation'
