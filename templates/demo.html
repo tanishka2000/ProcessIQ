@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat with Google Gemini</title>
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <link rel="stylesheet" href="/static/demo_style.css">
+</head>
+<body>
+    <p style="font-size: 48px;margin: 0;padding: 40px 0px 0px 0px;">ProcessIQ</p>
+    <p>Streamlining Process Design with Intelligent Automation</p>
+
+    <div id="chat-box">
+        <!-- Chatbot message -->
+        <div class="message bot">
+            <img src="static/chatbot-icon.png" alt="Chatbot Icon" class="bot-icon" />
+            <span>Hello, how can I assist you?</span>
+        </div>
+    </div>
+
+    <div id="input-box">
+        <!-- Input field and button -->
+        <div class="input-container">
+            <label for="file-upload" class="file-upload-label">
+            <img src="static/upload-file-icon.png" alt="Upload File">
+        </label>
+        <input type="file" id="file-upload" style="display:none" />
+
+            <input type="text" id="question" placeholder="Ask something..." />
+            <button id="submit">
+                <img src="static/send-message.png" alt="Send Message">
+            </button>
+        </div>
+    </div>
+
+    <script src="/static/demo_script.js"></script>
+</body>
+</html>

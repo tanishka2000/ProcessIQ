@@ -13,9 +13,13 @@ app = Flask(__name__)
 chat_history = []
 
 @app.route('/')
-def index():
+def home():
+    return render_template('index.html')
+
+@app.route('/demo')
+def demo():
     """Render the chat UI."""
-    return render_template('index.html', chat_history=chat_history)
+    return render_template('demo.html', chat_history=chat_history)
 
 @app.route('/ask', methods=['POST'])
 def ask():
