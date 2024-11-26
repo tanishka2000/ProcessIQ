@@ -9,10 +9,7 @@ html, body{
 }
 
 body{
-background-image: url("background.png");
-  background-size:cover;
-  background-repeat:no-repeat;
-  background-position: center;
+background-color: #F1F1F1;
 }
 
 /* colors 8a3aff, 6f79ff, 3a9fff black-> 1f4568  grey->8198ae*/
@@ -290,15 +287,23 @@ color: #fff;
   width: 120px;
 }
 
-.btn--white{
+.btn--white1{
   background-color: #fff;
-  border: 1px solid #ededed;
+  border: 1px solid #313134;
+  color: #313134;
+    border-radius: 70px;
+
+}
+
+.btn--white1:hover{
+  background-color: #fff;
   color: #8198ae;
 }
 
-.btn--white:hover{
-  background-color: #fff;
-  color: #8198ae;
+.white2{
+  background-color: #313134;
+  border: 1px solid #fff;
+  color: white;
 }
 
 .price-box__btn {
@@ -476,7 +481,7 @@ filter: drop-shadow(0px 7px 4px rgba(0,0,0,.2));
 
 /*menu header*/
 .header{
-  padding: 30px 25px;
+  padding: 10px 5px;
 }
 .header__elenco {
     padding: 0;
@@ -493,6 +498,7 @@ filter: drop-shadow(0px 7px 4px rgba(0,0,0,.2));
 .header__img{
   display: inline-block;
   vertical-align: middle;
+    margin-top: 10px;
 }
 
 .header__logo, .header__menu{
@@ -806,7 +812,7 @@ vertical-align: middle;
     border-top: 1px solid #ededed;
 }
   
-  .header .btn--white, .header .btn--white:hover{
+  .header .btn--white1, .header .btn--white1:hover{
     padding: 0;
     border: 0;
     box-shadow: none;
