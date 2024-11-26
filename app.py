@@ -30,7 +30,7 @@ def ask():
         return jsonify({"error": "No question provided"}), 400
 
     # Generate response using the Gemini model
-    bot_response = genai_response(user_request, chat_history)
+    bot_response, bot_response_html = genai_response(user_request, chat_history)
 
     if not bot_response:
         return jsonify({"error": "Failed to get bot response"}), 500
@@ -49,7 +49,7 @@ def ask():
         img_url = None
 
     return jsonify({
-        "genai_response": bot_response,
+        "genai_response": bot_response_html,
         "p_id_data": img_url
     })
 

@@ -1,3 +1,4 @@
+import google.generativeai as genai
 import matplotlib.pyplot as plt
 import matplotlib.patches as patches
 import ezdxf
@@ -12,7 +13,7 @@ def parse_prompt(prompt):
     connections = []
 
     # Use regex to find operations (text between **)
-    operations = re.findall(r"\\(.?)\\*", prompt)
+    operations = re.findall(r"\*\*(.*?)\*\*", prompt)
 
     current_x = 10  # Starting x position
     padding = 35   # Increased padding between elements
@@ -39,12 +40,11 @@ def generate_pid(prompt):
     Generates a P&ID visualization using matplotlib and exports it to DXF.
     """
     elements, connections = parse_prompt(prompt)
-    elements, connections = parse_prompt(prompt)
     if not elements:
         print("Error: No elements found in the prompt.")
         return None
 
-    fig, ax = plt.subplots(figsize=(12, 4))  # Increased figure size
+    fig, ax = plt.subplots(figsize=(10, 2))  # Increased figure size
 
     # Calculate bounds for layout border
     min_x = min(element["position"][0] - element["width"] / 2 for element in elements)
@@ -109,7 +109,7 @@ def generate_pid(prompt):
 
 
 
-    plt.show()
+    # plt.show()
 
     # Export to DXF (example - you'll need to add entity creation logic)
     doc = ezdxf.new('R2010')

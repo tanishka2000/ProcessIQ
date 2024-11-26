@@ -18,7 +18,7 @@ def genai_response(user_request, chat_history):
         # Update chat history
         chat_history.append({"user": user_request, "bot": bot_response_html})
 
-        return bot_response_html  # Return HTML formatted response instead of plain text
+        return bot_response, bot_response_html  # Return HTML formatted response instead of plain text
 
     except Exception as e:
         bot_response = f"Error: {str(e)}"

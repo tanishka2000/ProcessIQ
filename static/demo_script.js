@@ -11,7 +11,7 @@ function displayImage(imageUrl) {
 
     const img = document.createElement('img');
     img.src = imageUrl || 'static/default-image.jpg';  // Default image if no URL is provided
-    img.style.maxWidth = '50%';  // Ensure the image is responsive
+    img.style.maxWidth = '500px';  // Ensure the image is responsive
     img.style.display = 'block';  // Ensure the image is displayed properly
     img.style.margin = '0% 5%';
 
