@@ -5,14 +5,14 @@ html, body{
   margin: 0;
   padding: 0; 
   font-family: 'Lato', sans-serif;
-  color: #1f4568;
+  color: #C93200;
 }
 
 body{
 background-color: #F1F1F1;
 }
 
-/* colors 8a3aff, 6f79ff, 3a9fff black-> 1f4568  grey->8198ae*/
+/* colors 8a3aff, 6f79ff, 3a9fff black-> C93200  grey->8198ae*/
 .sect{
   padding: 90px 0;
   position: relative;
@@ -256,7 +256,7 @@ color: #fff;
 
 .btn--revert:hover{
     background-color:transparent;
-    color: #1f4568;
+    color: #C93200;
     box-shadow: none;
     border:1px solid #8198ae;
 }
@@ -517,7 +517,7 @@ filter: drop-shadow(0px 7px 4px rgba(0,0,0,.2));
   color: #8198ae;
 }
 .header__link{
-  color: #1f4568;
+  color: #C93200;
   font-size: 14px;
 
 }
@@ -609,7 +609,7 @@ padding: 25px 25px 0 25px;
 
 .article-pre__title {
 font-size: 20px;
-color: #1f4568;
+color: #C93200;
 margin: 0;
 padding: 15px 25px;
 }
@@ -628,7 +628,7 @@ padding: 15px 25px;
 }
 
 .contacts__link{
-  color: #1f4568;
+  color: #C93200;
 }
 
 .contacts--light {
@@ -701,7 +701,7 @@ width: 100%;
     padding-right: 30px;
     background-position-y: center;
     background-color:#fff;
-  color: #1c6370;
+  color: #C93200;
 }
 
 .form__field--half{
@@ -747,7 +747,7 @@ left: 20%;
 
 
 .footer{
- background-color: #1c6370;
+ background-color: #C93200;
   padding: 40px 0; 
 }
 
